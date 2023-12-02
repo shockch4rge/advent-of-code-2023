@@ -1,7 +1,8 @@
 import { readFileSync } from "fs";
 import path from "path";
+import { readText } from "../readText";
 
-const text = readFileSync(path.join(__dirname, "lol.txt"), "utf-8").split("\r\n");
+const text = readText(__dirname, "lol.txt")
 const wordDigits = [
     ["one", 1],
     ["two", 2],
